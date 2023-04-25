@@ -55,7 +55,9 @@ variable "creator" {
 variable "role" {
   type = string
 }
-variable "kvtest" {
-  accesskey = "${var.accesskey}"
-  secrectkey = "${var.secretkey}"
+variable "aws_access_key" {
+default = "AWSXXXXXX0978"
+}
+variable "aws_secret_key"{
+default = "AULP0XXXXXXY7US9XXXXOP56JX"
 }
