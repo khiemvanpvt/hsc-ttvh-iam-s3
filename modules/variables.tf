@@ -56,6 +56,6 @@ variable "role" {
   type = string
 }
 variable "kvtest" {
-  accesskey = procees.env.accesskey
-  secrectkey = procees.env.secretkey
+  accesskey = "${var.accesskey}"
+  secrectkey = "${var.secretkey}"
 }
