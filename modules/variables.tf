@@ -20,7 +20,7 @@ variable "environment" {
   type    = string
   default = "dev"
   validation {
-    condition     = contains(["dev", "uat", "prod"], var.environment)
+    condition     = contains(["dev", "uat", "prod","test"], var.environment)
     error_message = "Yeu cau nhap dung ten moi truong"
   }
 }
@@ -33,7 +33,7 @@ variable "project_name" {
 variable "department" {
   type = string
   validation {
-    condition     = contains(["cntt", "nhs"], var.department)
+    condition     = contains(["cntt", "nhs","home"], var.department)
     error_message = "Nhap chinh xac ten phong ban"
   }
 }
